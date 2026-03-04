@@ -1,6 +1,6 @@
 <div align="center">
 <br>
-<img src="assets/nevadaicon.png" width="20%" />
+<img src="assets/nevadalogo.png" width="20%" />
 <br>
 N E V A D A
 <br>
