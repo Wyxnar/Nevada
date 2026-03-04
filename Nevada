@@ -1,0 +1,53 @@
+# NEVADA - ENCRYPTION/DECRYPTION TOOL v1.0
+# Author: Wyxnar
+
+Clear-Host
+$Green = "#00FF00"
+$Cyan  = "#00FFFF"
+
+Write-Host @"
+$Green
+  _   _RVADA  _______      __      _____          
+
+
+888b    888                                 888          
+8888b   888                                 888          
+88888b  888                                 888          
+888Y88b 888  .d88b.  888  888  8888b.   .d88888  8888b.  
+888 Y88b888 d8P  Y8b 888  888     "88b d88" 888     "88b 
+888  Y88888 88888888 Y88  88P .d888888 888  888 .d888888 
+888   Y8888 Y8b.      Y8bd8P  888  888 Y88b 888 888  888 
+888    Y888  "Y8888    Y88P   "Y888888  "Y88888 "Y888888 
+                                                         
+                                                   
+    [ TERMINAL CRYPTO SYSTEM - PHASE II ]
+"@ -ForegroundColor Green
+
+Write-Host "`n[1] Encrypt Message" -ForegroundColor Cyan
+Write-Host "[2] Decrypt Message" -ForegroundColor Cyan
+$choice = Read-Host "`nSelect Protocol"
+$key = 2014 
+
+if ($choice -eq "1") {
+    $msg = Read-Host "`nInput message to encrypt"
+    $output = ""
+    foreach ($char in $msg.ToCharArray()) {
+        $output += [char]([int]$char + $key)
+    }
+    Write-Host "`n[!] ENCRYPTED OUTPUT:" -ForegroundColor Yellow
+    Write-Host $output -ForegroundColor Magenta
+}
+elseif ($choice -eq "2") {
+    $msg = Read-Host "`nInput message to decrypt"
+    $output = ""
+    foreach ($char in $msg.ToCharArray()) {
+        $output += [char]([int]$char - $key)
+    }
+    Write-Host "`n[!] DECRYPTED OUTPUT:" -ForegroundColor Yellow
+    Write-Host $output -ForegroundColor White
+}
+else {
+    Write-Host "`n[!] Invalid Protocol. System Halted." -ForegroundColor Red
+}
+
+Write-Host "`n[?] Operation finished." -ForegroundColor Green
