@@ -31,4 +31,6 @@ PowerShell: Version 5.1 or higher (Pre-installed on Windows 11).
 ```bash
 Set-ExecutionPolicy Bypass -Scope Process; & ".\FILENAMEHERE.ps1"
 ```
+<center>
 <small>W Y X N A R</small>
+</center>
