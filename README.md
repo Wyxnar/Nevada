@@ -30,5 +30,5 @@ PowerShell: Version 5.1 or higher (Pre-installed on Windows 11).
 5. Type the following command to execute the encryption protocol (replace FILENAME with your file's name):
 ```bash
 Set-ExecutionPolicy Bypass -Scope Process; & ".\FILENAMEHERE.ps1"
-
+```
 <small>W Y X N A R</small>
