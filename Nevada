@@ -7,8 +7,6 @@ $Cyan  = "#00FFFF"
 
 Write-Host @"
 $Green
-  _   _RVADA  _______      __      _____          
-
 
 888b    888                                 888          
 8888b   888                                 888          
